@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Website - Bio</title>
+    <!-- Include Font Awesome or Material Icons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Or -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> -->
+    <style>
+        body {
+            background-size: cover;
+            background-position: center;
+            color: #000000;
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-family: "Times New Roman", serif;
+            font-size: 75px;
+            color:white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 24px;
+            font-family: "Times New Roman", serif;
+            text-align: center;
+            margin: 10px auto;
+            line-height: 1.5;
+            color: white;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            margin-right: 20px;
+            gap: 60px;
+        }
+
+        .nav-buttons button {
+            font-size: 24px;
+            padding: 10px 20px;
+            font-family: "Times New Roman", serif;
+            color: #000000;
+            background-color: #0eb291;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #0ed48b;
+        }
+
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 150px);
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(6, 152, 110, 0.1);
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .center-content span {
+            font-weight: bold;
+            color: white;
+        }
+        
+        /* Additional Styling */
+        .center-content p:first-child {
+            font-size: 28px;
+            color:white;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .center-content p:last-child {
+            font-size: 28px;
+            color: white;
+            margin-top: 30px;
+        }
+        
+        .center-content a {
+            color: #0eb291;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .center-content a:hover {
+            color: #070707;
+        }
+        
+        /* Flexbox Layout */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .flex-container .flex-item {
+            flex-basis: calc(50% - 15px);
+        }
+        
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+            }
+            
+            .flex-container .flex-item {
+                flex-basis: 100%;
+                margin-bottom: 30px;
+            }
+        }
+        
+        /* New Styles */
+        .left-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 50px;
+            gap: 20px;
+        }
+        
+        .left-content h2 {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            font-size: 24px;
+            color: white;
+        }
+        
+        .left-content p {
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            margin: 0;
+            font-size: 18px;
+            color: white;
+        }
+
+        .profile-photo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-photo img {
+            width: 300px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(6, 152, 110, 0.3);
+        }
+    </style>
+</head>
+<body style="background-image: url(images/mainbg.jpg);">
+    <div class="nav-buttons">
+        <button onclick="location.href='index.html'"><i class="fas fa-user"></i> Bio</button>
+        <button onclick="location.href='qualification.html'"><i class="fas fa-graduation-cap"></i> Qualifications</button>
+        <button onclick="location.href='achievement.html'"><i class="fas fa-trophy"></i> Achievements</button>
+        <button onclick="location.href='hobbies.html'"><i class="fas fa-heart"></i> Hobbies</button>
+        <button onclick="location.href='gallery.html'"><i class="fas fa-images"></i> Photo Gallery</button>
+        <button onclick="location.href='contact.html'"><i class="fas fa-envelope"></i> Contact</button>
+    </div>
+
+    <h1>Apeksha A</h1>
+
+    <!-- Bio Page Content -->
+    <section>
+        <div class="center-content">
+            <div class="flex-container">
+                <div class="flex-item">
+                    <div class="profile-photo">
+                        <img src="images/newp.jpg" alt="Profile Photo">
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <p>Hey there! I am Apeksha! Welcome to my personal website. Here you can find information about me and get to know me.
+                        I am an Engineering student currently pursuing 3rd year CSE.</p>
+
+                    <p>If you have any questions or would like to get in touch, please feel free to contact me through the details provided in the <a href="contact.html">Contact</a> page.</p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <div class="left-content">
+                        <div class="counter">
+                            <h2>Page Visit Counter</h2>
+                            <p id="visitCount">Loading...</p>
+                        </div>
+
+                        <div class="servertime">
+                            <h2>Server Time</h2>
+                            <p id="stime">Loading...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- Include Font Awesome JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="counter.js"></script>
+    <script src="stime.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Website - Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 150px);
+            padding: 40px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .contact-container h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 40px;
+            color: #0eb291;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            letter-spacing: 2px;
+        }
+
+        .contact-container .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .contact-container .enquiry-form {
+            margin-top: 40px;
+            color: white;
+        }
+
+        .contact-container .enquiry-form label {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .contact-container .enquiry-form input,
+        .contact-container .enquiry-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            color: black;
+            background-color: white;
+            border: none;
+        }
+
+        .contact-container .enquiry-form button {
+            padding: 10px 20px;
+            background-color: #0eb291;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-container .enquiry-form button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .contact-container .social-links a {
+            display: inline-block;
+            font-size: 28px;
+            color: #0eb291;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-container .social-links a:hover {
+            color: #070707;
+        }
+    </style>
+</head>
+<body style="background-image: url(images/2ndbg.jpg);">
+    <section>
+        <div class="contact-container">
+            <h1>Contact</h1>
+            <div class="contact-info">
+                <p>Email: apekshakumble@gmail.com</p>
+                <p>Phone: 9567026844</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/apeksha-a-0a9187215?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHOY264bqQp%2BjQNKkX0Q8cA%3D%3D"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <div class="enquiry-form">
+                <h2>Enquiry Form</h2>
+                <form>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
